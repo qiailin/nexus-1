@@ -439,7 +439,7 @@ Ext.extend(Ext.form.Action.sonatypeLoad, Ext.form.Action, {
   }
 });
 
-Ext.form.Action.ACTION_TYPES.sonatypeLoad = Ext.form.Action.sonatypeLoad;
-Ext.form.Action.ACTION_TYPES.sonatypeSubmit = Ext.form.Action.sonatypeSubmit;
+Ext.reg('formaction.sonatypeLoad', 'Ext.form.Action.sonatypeLoad');
+Ext.reg('formaction.sonatypeSubmit', 'Ext.form.Action.sonatypeSubmit');
 
 });

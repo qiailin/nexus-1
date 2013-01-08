@@ -166,7 +166,7 @@ Nexus.profile.UserProfile = function(cfg) {
 
 };
 
-Ext.extend(Nexus.profile.UserProfile, Ext.Panel);
+Ext.extend(Nexus.profile.UserProfile, Ext.Panel, {});
 
 /**
  * The inner content panel of the user profile tab.
@@ -201,7 +201,7 @@ Nexus.profile.UserProfile.Content = function(config)
     profile.refreshButton.setVisible(panel.refreshContent !== undefined);
   };
 };
-Ext.extend(Nexus.profile.UserProfile.Content, Ext.TabPanel);
+Ext.extend(Nexus.profile.UserProfile.Content, Ext.TabPanel, {});
 
 /**
  * Weirdo hack to get bookmarking to work. navigation-* is usually the link in the left nav panel,
@@ -215,7 +215,7 @@ Nexus.profile.OpenAction = function(config) {
   };
   Nexus.profile.OpenAction.superclass.constructor.call(this, config);
 };
-Ext.extend(Nexus.profile.OpenAction, Ext.Panel);
+Ext.extend(Nexus.profile.OpenAction, Ext.Panel, {});
 
 Nexus.profile.OpenAction.registered = new Nexus.profile.OpenAction({
   id : 'navigation-profile'

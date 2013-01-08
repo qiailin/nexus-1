@@ -508,6 +508,6 @@ Ext.ux.form.BrowseButton = Ext.extend(Ext.Button, {
 // FIXME this is fixed in ExtJS3 AFAIK, no need to enhance the prototype here
 Ext.applyIf(Ext.ux.form.BrowseButton.prototype, Ext.BoxComponent.prototype);
 
-Ext.reg('browsebutton', Ext.ux.form.BrowseButton);
+Ext.reg('browsebutton', 'Ext.ux.form.BrowseButton');
 
 });

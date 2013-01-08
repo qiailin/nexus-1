@@ -44,7 +44,7 @@
     <script src="js/lib/require-2.1.1.js" type="text/javascript" charset="utf-8"></script>
 
   #if ($debug)
-      <script src="ext-4.1.1a/ext-all-debug-w-comments.js" type="text/javascript" charset="utf-8"></script>
+      <script src="ext-4.1.1a/ext-all-dev.js" type="text/javascript" charset="utf-8"></script>
       ## omit sonatype-all.js to pick up single file modules
   #else
       ## load aggregated/minified files

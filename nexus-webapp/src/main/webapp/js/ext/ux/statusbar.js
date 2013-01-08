@@ -419,6 +419,6 @@ statusBar.setStatus({
         return this.setStatus(o);
     }
 });
-Ext.reg('statusbar', Ext.ux.StatusBar);
+Ext.reg('statusbar', 'Ext.ux.StatusBar');
 
 });

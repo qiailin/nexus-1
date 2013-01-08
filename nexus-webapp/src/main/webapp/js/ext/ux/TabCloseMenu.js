@@ -148,5 +148,5 @@ define('ext/ux/TabCloseMenu',['extjs'], function(Ext){
     }
   });
 
-  Ext.preg('tabclosemenu', Ext.ux.TabCloseMenu);
+  Ext.preg('tabclosemenu', 'Ext.ux.TabCloseMenu');
 });

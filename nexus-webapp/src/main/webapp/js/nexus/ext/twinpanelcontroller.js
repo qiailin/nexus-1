@@ -162,7 +162,7 @@ Ext.extend(Nexus.ext.TwinPanelController, Ext.Panel, {
       }
     });
 
-Ext.reg('twinpanelcontroller', Nexus.ext.TwinPanelController);
+Ext.reg('twinpanelcontroller', 'Nexus.ext.TwinPanelController');
 
 Nexus.ext.TwinPanelChooser = function(cfg) {
   var
@@ -553,7 +553,7 @@ Ext.extend(Nexus.ext.TwinPanelChooser, Ext.Panel, {
       }
     });
 
-Ext.reg('twinpanelchooser', Nexus.ext.TwinPanelChooser);
+Ext.reg('twinpanelchooser', 'Nexus.ext.TwinPanelChooser');
 return Nexus;
 });
 

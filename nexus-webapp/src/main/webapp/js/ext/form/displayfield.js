@@ -28,7 +28,7 @@ Ext.form.TimestampDisplayField = Ext.extend(Ext.form.DisplayField, {
   }
 });
 
-Ext.reg('timestampDisplayField', Ext.form.TimestampDisplayField);
+Ext.reg('timestampDisplayField', 'Ext.form.TimestampDisplayField');
 
 Ext.form.ByteDisplayField = Ext.extend(Ext.form.DisplayField, {
   setValue : function(v) {
@@ -58,6 +58,6 @@ Ext.form.ByteDisplayField = Ext.extend(Ext.form.DisplayField, {
   }
 });
 
-Ext.reg('byteDisplayField', Ext.form.ByteDisplayField);
+Ext.reg('byteDisplayField', 'Ext.form.ByteDisplayField');
 
 });

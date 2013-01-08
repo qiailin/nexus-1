@@ -425,7 +425,7 @@ Ext.extend(Nexus.form.RoleManager, Ext.grid.GridPanel, {
       }
     });
 
-Ext.reg('rolemanager', Nexus.form.RoleManager);
+Ext.reg('rolemanager', 'Nexus.form.RoleManager');
 
 /**
  * A Nexus.form.RoleSelectorGrid is used to display the roles and privileges (optional) in a grid with checkboxes for simple selection
@@ -848,5 +848,5 @@ Ext.extend(Nexus.form.RoleSelectorGrid, Ext.grid.GridPanel, {
 top.RoleManager = Nexus.form.RoleManager;
 top.RoleSelectorGrid = Nexus.form.RoleSelectorGrid;
 
-Ext.reg('roleselector', Nexus.form.RoleSelectorGrid);
+Ext.reg('roleselector', 'Nexus.form.RoleSelectorGrid');
 });

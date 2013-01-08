@@ -1366,6 +1366,8 @@
               <exclude>**/ldap-common/target/**</exclude>
               <exclude>**/ext-2.3/**</exclude>
               <exclude>**/ext-3.4.0/**</exclude>
+              <exclude>**/ext-3-compat/**</exclude>
+              <exclude>**/ext-4.1.1a/**</exclude>
               <exclude>**/js/filetree/**</exclude>
               <exclude>**/editarea_0_8_2/**</exclude>
               <exclude>**/org/sonatype/security/ldap/dao/password/hash/MD5Crypt.java</exclude>

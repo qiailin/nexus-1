@@ -44,7 +44,7 @@ Ext.form.RepositoryUrlDisplayField = Ext.extend(Ext.form.DisplayField, {
       }
     });
 
-Ext.reg('repositoryUrlDisplayField', Ext.form.RepositoryUrlDisplayField);
+Ext.reg('repositoryUrlDisplayField', 'Ext.form.RepositoryUrlDisplayField');
 
 Sonatype.repoServer.ArtifactInformationPanel = function(config) {
   var config = config || {};

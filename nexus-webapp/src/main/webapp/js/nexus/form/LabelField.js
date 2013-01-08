@@ -49,6 +49,6 @@ Nexus.form.LabelField = Ext.extend( Ext.form.Field, {
   }
 });
 
-Ext.reg('labelfield', Nexus.form.LabelField);
+Ext.reg('labelfield', 'Nexus.form.LabelField');
 });
 

@@ -282,5 +282,5 @@ Ext.ux.form.LovCombo = Ext.extend(Ext.form.ComboBox, {
 }); // eo extend
  
 // register xtype
-Ext.reg('lovcombo', Ext.ux.form.LovCombo); 
+Ext.reg('lovcombo', 'Ext.ux.form.LovCombo'); 
 });

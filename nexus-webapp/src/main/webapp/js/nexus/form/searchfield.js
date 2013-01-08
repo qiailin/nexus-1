@@ -80,7 +80,7 @@ Nexus.form.SearchField = Ext.extend(Ext.form.TwinTriggerField, {
       }
     });
 
-Ext.reg('nexussearchfield', Nexus.form.SearchField);
+Ext.reg('nexussearchfield', 'Nexus.form.SearchField');
 
 // FIXME: legacy
 Ext.app.SearchField = Nexus.form.SearchField;

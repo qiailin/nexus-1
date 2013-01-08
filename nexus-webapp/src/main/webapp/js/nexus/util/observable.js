@@ -97,8 +97,10 @@ define('nexus/util/observable', ['extjs', 'nexus'], function(Ext, Nexus) {
        */
       'privilegePanelInit' : true
     });
+
+    Nexus.util.Observable.superclass.constructor.apply(this, arguments);
   };
-  Ext.extend(Nexus.util.Observable, Ext.util.Observable);
+  Ext.extend(Nexus.util.Observable, Ext.util.Observable, {});
   return Nexus;
 });
 

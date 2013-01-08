@@ -799,5 +799,5 @@ Ext.ux.MultiSelectTreePanel = Ext.extend(Ext.tree.TreePanel, {
       }
     });
 
-Ext.reg('multiselecttreepanel', Ext.ux.MultiSelectTreePanel);
+Ext.reg('multiselecttreepanel', 'Ext.ux.MultiSelectTreePanel');
 });

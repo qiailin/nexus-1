@@ -225,5 +225,5 @@ Ext.extend(Nexus.ext.TextEntryList, Ext.FormPanel, {
 
     });
 
-Ext.reg('textentrylist', Nexus.ext.TextEntryList);
+Ext.reg('textentrylist', 'Nexus.ext.TextEntryList');
 });

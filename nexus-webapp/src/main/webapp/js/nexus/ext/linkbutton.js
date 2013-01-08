@@ -114,6 +114,6 @@ define('nexus/ext/linkbutton', ['extjs', 'nexus'], function(Ext, Nexus) {
   });
 
   Nexus.ext.LinkButton = LinkButton;
-  Ext.ComponentMgr.registerType('link-button', Nexus.ext.LinkButton);
+  Ext.ComponentMgr.registerType('link-button', 'Nexus.ext.LinkButton');
 });
 

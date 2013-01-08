@@ -17,6 +17,6 @@ define('nexus/ext',
         'nexus/ext/formpanel',
         'nexus/ext/TextEntryList',
         'nexus/ext/linkbutton',
-        'nexus/ext/twinpanelcontroller'
+    //    'nexus/ext/twinpanelcontroller'
       ],
       function() {});
