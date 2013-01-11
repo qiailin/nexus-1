@@ -13,7 +13,7 @@
 /*global define*/
 define('ext/tree',
       [
-        'ext/tree/sonatype',
+        'ext/tree/sonatype'
 //        'ext/tree/treedropzone',
 //        'ext/tree/treeloader'
       ],

@@ -40,8 +40,7 @@ Sonatype.view = {
 
     Sonatype.view.welcomeTab = new Ext.Panel({
           contentEl : 'welcome-tab',
-          title : 'Welcome',
-          id : 'welcome'
+          title : 'Welcome'
         });
 
     Sonatype.view.headerPanel = new Ext.Panel({
@@ -138,8 +137,8 @@ Sonatype.view = {
 
     // Export useful values to Sonatype.view namespace
     Sonatype.view.viewport = viewport;
-    Sonatype.view.serverTabPanel = viewport.findById('st-server-tab-panel');
-    Sonatype.view.mainTabPanel = viewport.findById('st-main-tab-panel');
+    Sonatype.view.serverTabPanel = Ext.getCmp('st-server-tab-panel');
+    Sonatype.view.mainTabPanel = Ext.getCmp('st-main-tab-panel');
     Sonatype.view.supportedNexusTabs = {};
 
     size = Sonatype.view.serverTabPanel.getSize();

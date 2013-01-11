@@ -548,7 +548,7 @@ define('repoServer/RepoServer',['extjs', 'sonatype', 'sonatype/lib', 'nexus/conf
           Sonatype.view.welcomePanel.superclass.constructor.call(this, welcomeTabConfig );
         };
 
-        Ext.extend(Sonatype.view.welcomePanel, Ext.Panel);
+        Ext.extend(Sonatype.view.welcomePanel, Ext.Panel, {});
 
         Sonatype.view.welcomeTab = new Sonatype.view.welcomePanel(welcomeTabConfig);
         Sonatype.view.mainTabPanel.add(Sonatype.view.welcomeTab);
@@ -557,7 +557,8 @@ define('repoServer/RepoServer',['extjs', 'sonatype', 'sonatype/lib', 'nexus/conf
         Sonatype.view.welcomeTab.closable = false;
 
         // HACK: close is not a tool button, so we need to hide it manually
-        Ext.get(Sonatype.view.welcomeTab.tabEl).down('a.x-tab-strip-close').toggleClass('x-hidden');
+        // FIXME still needed with compat v4?
+//        Ext.get(Sonatype.view.welcomeTab.tabEl).down('a.x-tab-strip-close').toggleClass('x-hidden');
 
         Sonatype.view.mainTabPanel.setActiveTab(Sonatype.view.welcomeTab);
       },

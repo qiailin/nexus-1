@@ -12,6 +12,7 @@
  */
 /*global define*/
 define('ext/menu', ['extjs', 'nexus/error/ErrorHandler'], function(Ext, ErrorHandler){
+  /*
   // HACK we cannot replace the menu class to check cfg.id, because initComponent has a static reference to Ext.menu.Menu -> recursion
   Ext.override(Ext.menu.Menu, {
     initComponentOrig : Ext.menu.Menu.prototype.initComponent,
@@ -25,6 +26,7 @@ define('ext/menu', ['extjs', 'nexus/error/ErrorHandler'], function(Ext, ErrorHan
       this.initComponentOrig.apply(this, arguments);
     }
   });
+  */
 
   return Ext.menu.Menu;
 });

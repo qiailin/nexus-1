@@ -13,6 +13,6 @@
 /*global define*/
 define('ext/lib',
       [
-        'ext/lib/ajax'
+//        'ext/lib/ajax'
       ],
       function() {});

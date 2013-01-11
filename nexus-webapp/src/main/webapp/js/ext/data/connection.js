@@ -33,4 +33,16 @@ Ext.override(Ext.data.Connection, {
     this.doFormUploadOrig.call(this, o, ps, this.extendFormUploadURL(url));
   }
 });
+
+  // Workaround for ExtJS 4.1.1a bug - while debugging, request.xhr may not be set for onStateChange.
+  Ext.define('OverrideConnection', {
+    override : 'Ext.data.Connection',
+    onStateChange : function(request) {
+      if (request && request.xhr && request.xhr.readyState == 4) {
+        this.clearTimeout(request);
+        this.onComplete(request);
+        this.cleanup(request);
+      }
+    }
+  });
 });

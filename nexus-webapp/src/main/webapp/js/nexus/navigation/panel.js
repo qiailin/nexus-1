@@ -62,7 +62,7 @@ Ext.extend(Sonatype.navigation.NavigationPanel, Ext.Panel, {
     }
 
     panel = new Sonatype.navigation.Section(container);
-    panel = Sonatype.navigation.NavigationPanel.superclass.insert.call(this, sectionIndex, panel);
+    panel = Sonatype.navigation.NavigationPanel.superclass.add.call(this, sectionIndex, panel);
     if (panel.id && this.delayedItems[panel.id])
     {
       panel.add(this.delayedItems[panel.id]);

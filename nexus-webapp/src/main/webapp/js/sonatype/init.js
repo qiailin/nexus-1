@@ -63,7 +63,7 @@ define('sonatype/init',['extjs', 'sonatype', 'nexus/util/observable', 'sonatype'
 
     updateRightWhenLoggedIn : function(linkEl) {
       linkEl.update(Sonatype.user.curr.username);
-      linkEl.addClass('head-link-logged-in');
+      linkEl.addCls('head-link-logged-in');
       linkEl.un('click', Sonatype.repoServer.RepoServer.loginHandler, Sonatype.repoServer.RepoServer);
       linkEl.on('click', Sonatype.repoServer.RepoServer.showProfileMenu);
     },
@@ -72,7 +72,7 @@ define('sonatype/init',['extjs', 'sonatype', 'nexus/util/observable', 'sonatype'
       linkEl.update('Log In');
 
       this.setClickLink(linkEl);
-      linkEl.removeClass('head-link-logged-in');
+      linkEl.removeCls('head-link-logged-in');
     },
     setClickLink : function(el) {
       el.removeAllListeners();

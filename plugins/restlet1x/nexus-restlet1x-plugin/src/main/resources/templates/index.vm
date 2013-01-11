@@ -59,7 +59,8 @@
         requirejs(['require', 'extjs', 'nexus/ui', 'sonatype/all'], function(require, Ext, Nexus, Sonatype) {
             var
                     all = ${pluginJsFiles.size()},
-                    loaded = 0;
+                    loaded = 0,
+                    initAlreadyDone = false;
 
             function init() {
                 loaded += 1;
@@ -68,13 +69,12 @@
                     return;
                 }
 
-                var alreadyDone = false;
 
                 function init() {
-                    if (!Ext.isReady || alreadyDone) {
+                    if (!Ext.isReady || initAlreadyDone) {
                         return;
                     }
-                    alreadyDone = true;
+                    initAlreadyDone = true;
 
                     Nexus.Log.debug('Initializing UI...');
                     Sonatype.init();
@@ -90,9 +90,9 @@
 
             function errorCallback(error) {
                 if (Nexus.error !== undefined) {
-                    Nexus.error.handle([errorCallback]);
+                    Nexus.error.handle([error]);
                 } else if (console !== undefined) {
-                    console.log(errorCallback);
+                    console.log(error);
                 }
                 init();
             }

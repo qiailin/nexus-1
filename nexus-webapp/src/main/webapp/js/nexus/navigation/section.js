@@ -174,12 +174,14 @@ Ext.extend(Sonatype.navigation.Section, Ext.Panel, {
         {
             return;
         }
-          
-        var _fSorter = function(obj1, obj2) {
-           var fieldName = "sortable_title";
-           return Sonatype.utils.sortFn(obj1[fieldName], obj2[fieldName]);
-        };
-        this.items.sort(asOrder || 'ASC', _fSorter);
+
+        var
+              _fSorter = function(obj1, obj2) {
+                var fieldName = "sortable_title";
+                return Sonatype.utils.sortFn(obj1[fieldName], obj2[fieldName]);
+              };
+
+        this.items.items.sort(asOrder || 'ASC', _fSorter);
       }
     });
 

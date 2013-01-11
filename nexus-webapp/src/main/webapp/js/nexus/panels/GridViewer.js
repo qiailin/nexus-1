@@ -180,11 +180,12 @@ Ext.namespace('Sonatype.panels');
       region : this.collapsibleDetails ? 'center' : 'north',
       collapsible : this.collapsible || false,
       split : true,
-      height : this.collapsibleDetails ? null : Sonatype.view.mainTabPanel.getInnerHeight() / 3,
+      height : this.collapsibleDetails ? null : Sonatype.view.mainTabPanel.getHeight() / 3,
       minHeight : this.collapsibleDetails ? null : 100,
       maxHeight : this.collapsibleDetails ? null : 500,
       frame : false,
       autoScroll : true,
+      /* not sure selModel is still valid for ExtJS4 - probably need a different workaround/rewrite for v4
       selModel : new Ext.grid.RowSelectionModel({
         singleSelect : this.singleSelect,
         listeners : {
@@ -195,6 +196,7 @@ Ext.namespace('Sonatype.panels');
           }
         }
       }),
+       */
 
       ds : this.dataStore,
       // sortInfo: { field: 'name', direction: "ASC"},
