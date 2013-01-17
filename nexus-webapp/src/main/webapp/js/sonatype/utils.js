@@ -796,13 +796,13 @@ define('sonatype/utils',['../extjs', 'nexus/config', 'nexus/util/Format'], funct
       return {
         stop : function() {
           if (running !== null) {
-            Ext.TaskMgr.stop(running);
+            Ext.util.TaskManager.stop(running);
             running = null;
           }
         },
         start : function() {
           if (running === null) {
-            running = Ext.TaskMgr.start(config);
+            running = Ext.util.TaskManager.start(config);
           }
         }};
     })(),

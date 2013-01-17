@@ -445,10 +445,10 @@ define('repoServer/RepoServer',['extjs', 'sonatype', 'sonatype/lib', 'nexus/conf
         ],
         listeners : {
           show : function() {
-            Ext.get('head-link-r').addClass('profile-menu-visible')
+            Ext.get('head-link-r').addCls('profile-menu-visible');
           },
           hide : function() {
-            Ext.get('head-link-r').removeClass('profile-menu-visible')
+            Ext.get('head-link-r').removeCls('profile-menu-visible');
           }
         }
       }),

@@ -239,7 +239,6 @@ define('repoServer/ServerEditPanel', ['extjs', 'sonatype/all'], function(Ext, So
               mode : 'local',
               triggerAction : 'all',
               emptyText : 'Select...',
-              selectOnFocus : true,
               allowBlank : false
             },
             {

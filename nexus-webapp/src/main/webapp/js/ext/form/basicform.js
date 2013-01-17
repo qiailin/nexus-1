@@ -12,10 +12,15 @@
  */
 /*global define*/
 define('ext/form/basicform',['extjs'], function(Ext) {
+  Ext.override(Ext.form.Panel, {
+    find : function(attribute, value) {
+      return this.query('[' + attribute + '=' + value + ']');
+    }
+  });
 Ext.override(Ext.form.BasicForm, {
   clearInvalid : function() {
     // same as before, but ignore items without clearInvalid (== non-form-items)
-    this.items.each(function(f) {
+    this.getFields().each(function(f) {
       if (f.clearInvalid) {
         f.clearInvalid();
       }
@@ -28,7 +33,7 @@ Ext.override(Ext.form.BasicForm, {
   findField : function(id) {
     var
           findMatchingField,
-          field = this.items.get(id),
+          field = this.findById(id),
           fallbackField = null;
 
     if (!Ext.isObject(field)) {
